@@ -1,0 +1,46 @@
+@use "../../sass/variables" as *;
+
+.home__card{
+    border: 2px solid $border-background-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 240px;
+    border-radius: 15px;
+    transition: 1s;
+
+    &-description{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img{
+        height: 300px;
+        width: 240px;
+        transition: 1s;
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+
+
+
+    button{
+        background-color: $contrast-color;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px
+    }
+
+    a{
+        color: $white;
+        text-decoration: none;
+    }
+
+}
+
+.home__card:hover{
+    box-shadow: 10px 10px 20px 5px $border-background-color;
+}
